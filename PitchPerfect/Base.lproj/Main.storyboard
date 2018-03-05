@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Record Sounds View Controller-->
+        <!--Pitch Perfect-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9DZ-N1-hcz"/>
-                                    <segue destination="FHx-Qh-PM7" kind="show" id="MXv-Hh-sEq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,23 +56,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1dF-qR-iCt">
+                    <navigationItem key="navigationItem" title="Pitch Perfect" id="1dF-qR-iCt">
                         <barButtonItem key="backBarButtonItem" title="         " id="jCO-cf-JWS"/>
                     </navigationItem>
                     <connections>
                         <outlet property="recordButton" destination="MCL-Ve-Rsd" id="RG0-50-pnv"/>
                         <outlet property="recordingLabel" destination="YYb-90-zdB" id="Tmq-KS-Uv7"/>
                         <outlet property="stopRecordingButton" destination="k0r-ep-qfd" id="y6y-3T-qDf"/>
+                        <segue destination="FHx-Qh-PM7" kind="show" identifier="stopRecording" id="Hbe-eY-TG0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="421.875" y="29.577464788732396"/>
         </scene>
-        <!--Change Sounds View Controller-->
+        <!--Play Audio-->
         <scene sceneID="H56-tP-AiI">
             <objects>
-                <viewController id="FHx-Qh-PM7" customClass="ChangeSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Play Audio" id="FHx-Qh-PM7" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z5V-16-aLq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

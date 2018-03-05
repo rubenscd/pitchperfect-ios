@@ -1,5 +1,5 @@
 //
-//  ChangeSoundsViewController.swift
+//  PlaySoundsViewController.swift
 //  PitchPerfect
 //
 //  Created by Rubens Cavalheiro on 05/03/2018.
@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ChangeSoundsViewController: UIViewController {
+class PlaySoundsViewController: UIViewController {
+	
+	var recordedAudioURL: URL!
 
     override func viewDidLoad() {
         super.viewDidLoad()
