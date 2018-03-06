@@ -30,7 +30,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
-        print("toca audio ao ser pressionado")
+        // print("toca audio ao ser pressionado")
 		switch ButtonType(rawValue: sender.tag)! {
 		case .slow:
 			playSound(rate: 0.5)
@@ -48,7 +48,7 @@ class PlaySoundsViewController: UIViewController {
 		configureUI(.playing)
     }
     @IBAction func stopSoundForButton(_ sender: Any) {
-        print("para audio ao ser pressionado")
+        // print("para audio ao ser pressionado")
 		stopAudio()
     }
 	

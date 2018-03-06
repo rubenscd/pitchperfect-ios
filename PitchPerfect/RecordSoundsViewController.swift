@@ -28,7 +28,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func recordAudio(_ sender: Any) {
-        print("o botao foi pressionado")
+        // print("o botao foi pressionado")
         recordingLabel.text = "Recording in progress"
         stopRecordingButton.isEnabled = true
         recordButton.isEnabled = false
@@ -37,7 +37,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
-		print(filePath as Any)
+		// print(filePath as Any)
 
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
@@ -50,7 +50,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func stopRecording(_ sender: Any) {
-        print("parou de gravar")
+        // print("parou de gravar")
         recordButton.isEnabled = true
         stopRecordingButton.isEnabled = false
         recordingLabel.text = "Tap to Record"
@@ -63,7 +63,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 	func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
 		if flag {
 			performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
-			print("gravou audio")
+			// print("gravou audio")
 		} else {
 			print("nao foi possivel gravar")
 		}
