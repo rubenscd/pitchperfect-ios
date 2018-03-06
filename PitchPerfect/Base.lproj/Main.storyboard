@@ -111,39 +111,57 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mzJ-gM-Hbc">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="106.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXu-D4-SBB" userLabel="Slow Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXu-D4-SBB" userLabel="Slow Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="106.5"/>
                                                 <state key="normal" image="Slow"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="FHx-Qh-PM7" eventType="touchUpInside" id="NpR-K2-qpg"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnN-qo-7ko" userLabel="Fast Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnN-qo-7ko" userLabel="Fast Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="160" height="106.5"/>
                                                 <state key="normal" image="Fast"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="FHx-Qh-PM7" eventType="touchUpInside" id="MqH-Mv-EeS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-7W-2FL">
                                         <rect key="frame" x="0.0" y="106.5" width="320" height="107"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="api-m7-lVR" userLabel="HighPitch Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="api-m7-lVR" userLabel="HighPitch Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="107"/>
                                                 <state key="normal" image="HighPitch"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="FHx-Qh-PM7" eventType="touchUpInside" id="jF7-zp-KmF"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sU7-4d-759" userLabel="LowPitch Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
+                                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sU7-4d-759" userLabel="LowPitch Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="160" height="107"/>
                                                 <state key="normal" image="LowPitch"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="FHx-Qh-PM7" eventType="touchUpInside" id="Ftl-f6-Qds"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nyp-k7-jAY">
                                         <rect key="frame" x="0.0" y="213.5" width="320" height="106.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-dw-wYd" userLabel="Echo Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
+                                            <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-dw-wYd" userLabel="Echo Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="106.5"/>
                                                 <state key="normal" image="Echo"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="FHx-Qh-PM7" eventType="touchUpInside" id="5DO-QF-O6t"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COn-lu-DLS" userLabel="Reverb Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
+                                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COn-lu-DLS" userLabel="Reverb Button" customClass="PlayButton" customModule="PitchPerfect" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="160" height="106.5"/>
                                                 <state key="normal" image="Reverb"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="FHx-Qh-PM7" eventType="touchUpInside" id="D1g-Ed-BGI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -156,6 +174,9 @@
                                     <constraint firstAttribute="height" constant="64" id="iIq-Iq-xZw"/>
                                 </constraints>
                                 <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopSoundForButton:" destination="FHx-Qh-PM7" eventType="touchUpInside" id="hfh-wj-Sbc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -171,7 +192,13 @@
                         <viewLayoutGuide key="safeArea" id="IVS-k3-GO0"/>
                     </view>
                     <connections>
+                        <outlet property="echoButton" destination="9ES-dw-wYd" id="3Yo-9Y-KGU"/>
+                        <outlet property="fastButton" destination="NnN-qo-7ko" id="Gwb-XB-Omv"/>
+                        <outlet property="highPitchButton" destination="api-m7-lVR" id="5Li-Zv-K1y"/>
+                        <outlet property="lowPitchButton" destination="sU7-4d-759" id="Ulc-Fj-ott"/>
+                        <outlet property="reverbButton" destination="COn-lu-DLS" id="If2-VX-R2H"/>
                         <outlet property="slowButton" destination="DXu-D4-SBB" id="3eY-Te-Oan"/>
+                        <outlet property="stopButton" destination="cwq-PS-B3g" id="Ljc-hD-naI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTL-Ub-vh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
